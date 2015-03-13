@@ -1,0 +1,486 @@
+/* Layout
+================================ */
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.mainContent {
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 33%, rgba(255,255,255,1) 33%, rgba(229,94,162,1) 72%, rgba(229,94,162,1) 72%, rgba(0,0,0,1) 82%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(33%,rgba(255,255,255,1)), color-stop(33%,rgba(255,255,255,1)), color-stop(72%,rgba(229,94,162,1)), color-stop(72%,rgba(229,94,162,1)), color-stop(82%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 33%,rgba(255,255,255,1) 33%,rgba(229,94,162,1) 72%,rgba(229,94,162,1) 72%,rgba(0,0,0,1) 82%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 33%,rgba(255,255,255,1) 33%,rgba(229,94,162,1) 72%,rgba(229,94,162,1) 72%,rgba(0,0,0,1) 82%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 33%,rgba(255,255,255,1) 33%,rgba(229,94,162,1) 72%,rgba(229,94,162,1) 72%,rgba(0,0,0,1) 82%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 33%,rgba(255,255,255,1) 33%,rgba(229,94,162,1) 72%,rgba(229,94,162,1) 72%,rgba(0,0,0,1) 82%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+.sectionImage img {
+  -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+background:none;
+}
+
+.sectionImage img:hover {
+  background-color: red;
+  z-index: 9999;
+}
+
+.sectionStart {
+  padding-top: 100px;
+}
+
+.homeDescription h3 {
+  text-align: center;
+}
+
+.homeDescription p, .donate p {
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+.socialIcons {
+  margin-top: 40px;
+}
+
+.donate {
+  text-align: left;
+}
+
+.thanks img {
+  width: auto;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.endMessage {
+  height: 400px;
+  background: url(../img/tom_about.jpg)  no-repeat;
+  margin-top: 550px;
+  background-size: cover;
+  background-color: #000;
+}
+
+.endMessage h1{
+  color: #ccc;
+  text-align: left;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 50px;
+}
+.endMessage p {
+  padding-left: 80px;
+}
+
+/* Logos & Icons
+================================= */
+
+.tvfIcon {
+  margin-left: auto;
+  margin-right: auto;
+    display: block;
+    height: 50px;
+    max-width: 50px;
+}
+
+[class*="fi-"] {
+  font-size: 5em;
+  text-align: center;
+  color: #ccc;
+  display: block;
+  margin: 0;
+  transition: all 500ms linear;
+}
+
+[class*="fi-"]:hover {
+  color: #e55ea2;
+}
+
+
+/*
+   HEADER SECTION
+   ========================================================================== */
+/* line 6, ../scss/style.scss */
+.header-section {
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.9);
+  position: fixed;
+  z-index: 999;
+  min-width: 100%;
+}
+
+/* line 14, ../scss/style.scss */
+.contain-to-grid {
+  background-color: rgba(255, 255, 255, 0.9);;
+}
+
+/* line 19, ../scss/style.scss */
+.header-fill {
+  background: #fff;
+  height: 135px;
+}
+/* line 22, ../scss/style.scss */
+.header-fill .tablet-mobile-logo img {
+  padding-top: 30px;
+}
+
+/* line 27, ../scss/style.scss */
+.full-width {
+  min-width: 100%;
+}
+
+/* line 31, ../scss/style.scss */
+p {
+  line-height: 3rem;
+  padding-bottom: 30px;
+}
+
+/*
+   TOPBAR NAVGATION
+   ========================================================================== */
+/* line 41, ../scss/style.scss */
+.top-bar {
+  background: none;
+  padding: 45px 0.9375rem 90px 0.9375rem;
+  transition: all 0.5s ease 0.1s;
+}
+/* line 46, ../scss/style.scss */
+.top-bar ul.title-area img {
+  margin: -30px 0 0 0;
+  width:80px;
+}
+/* line 49, ../scss/style.scss */
+.top-bar .top-bar-section ul {
+  background: none;
+}
+/* line 52, ../scss/style.scss */
+.top-bar .top-bar-section ul li a:not(.button), .top-bar .top-bar-section ul li.active a:not(.button) {
+  background: none;
+  line-height: 30px;
+  font-size: 12px;
+  padding: 0;
+  margin: 5px 0 0 0;
+  text-transform: uppercase;
+}
+/* line 61, ../scss/style.scss */
+.top-bar .top-bar-section ul li a:not(.button):hover {
+  background: none;
+  border-bottom: 2px solid #e55ea2;
+  color: #222;
+}
+/* line 67, ../scss/style.scss */
+.top-bar .top-bar-section ul li.active a:not(.button) {
+  border-bottom: 2px solid #e55ea2;
+  color: #222;
+}
+/* line 70, ../scss/style.scss */
+.top-bar .top-bar-section ul li.active a:not(.button):hover {
+  background: none;
+}
+/* line 74, ../scss/style.scss */
+.top-bar .top-bar-section ul li {
+  margin-left: 30px;
+}
+/* line 76, ../scss/style.scss */
+.top-bar .top-bar-section ul li a {
+  color: #888;
+}
+/* line 82, ../scss/style.scss */
+.top-bar .top-bar-section ul li:hover:not(.has-form) > a {
+  color: #333;
+}
+/* line 85, ../scss/style.scss */
+.top-bar .top-bar-section li ul.dropdown {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #888;
+}
+/* line 89, ../scss/style.scss */
+.top-bar .top-bar-section li ul.dropdown li {
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  padding: 5px 15px 5px 15px;
+}
+/* line 95, ../scss/style.scss */
+.top-bar .top-bar-section li ul.dropdown li a:not(.button):hover, .top-bar .top-bar-section li ul.dropdown li a:not(.button) {
+  background: none;
+  color: #222;
+  border-bottom: none;
+  padding: 20px -4px 40px 45px;
+}
+/* line 101, ../scss/style.scss */
+.top-bar .top-bar-section ul.dropdown li:hover:not(.has-form) > a:not(.button) {
+  background: none;
+  color: #222;
+}
+/* line 106, ../scss/style.scss */
+.top-bar .has-dropdown > a:after {
+  border-color: rgba(0, 0, 0, 0.5) transparent transparent;
+  margin-top: -5px;
+}
+
+/*
+   CONTENT SECTION
+   ========================================================================== */
+/* line 118, ../scss/style.scss */
+.content-section .main-content {
+  margin-top: 35px;
+}
+
+/* Carousel
+================================ */
+
+.mainCarousel {
+  height: 600px;
+  min-width: 100%;
+  background-color: #fff;
+}
+
+.mainCarousel img {
+  
+  
+}
+
+/* Required to hold the caption, or any closest parent selector to  .slide__caption */
+.slide1 {
+  background: url(../img/background1.jpg)  no-repeat;
+  background-size: cover;
+}
+
+.slide1 img {
+  height: 600px;
+  width: auto;
+  float: right;
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+.slide__caption1 {
+  text-align: center;
+  color: #000;
+  font-size: 2em;
+/*  width: 50%;
+  height: 70%;*/
+  overflow: auto;
+  margin-bottom: 10%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.slide2 {
+  height: 600px;
+  width: auto;
+  background: url(../img/background2.jpg)  no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.slide2 img, .slide3 img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  border: 1px solid #fff;
+}
+
+.slide__caption2 {
+  margin-top: 5%;
+}
+
+
+
+.slide3 {
+  height: 600px;
+  width: auto;
+  background: url(../img/background3.jpg)  no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.slide4 {
+  height: 600px;
+  width: auto;
+  background: url(../img/background4.jpg)  no-repeat;
+  background-size: cover;
+}
+
+
+/*
+   FOOTER SECTION
+   ========================================================================== */
+/* line 128, ../scss/style.scss */
+.footer-section {
+  background: #000;
+
+  min-height: 180px;
+}
+
+.footerCopy {
+  color: #fff;
+  margin-top: 135px;
+}
+
+/* line 131, ../scss/style.scss */
+.footer-section p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em;
+}
+
+.footer-section a {
+  color: #d94c3a;
+}
+
+.footer-section a:hover {
+  color: #813a26;
+}
+
+/* line 138, ../scss/style.scss */
+.padding-on-my-header {
+  padding: 17px 0.9375rem 62px 0.9375rem;
+}
+/* line 140, ../scss/style.scss */
+.padding-on-my-header ul.title-area img {
+  margin: -5px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  
+  .mainCarousel {
+  height: 300px;
+}
+
+
+  .mainCarousel img {
+    height: 300px;
+  }
+
+  .slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    .slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+
+  #logo-image {
+    display: none;
+  }
+
+  .name {
+   background: url(../img/logo2.png) 10px no-repeat;
+   background-size: 80px;
+   height: 80px; /* Height of new image */
+  }
+
+  .name img {
+    margin-top: 10px;
+  }
+
+  /* line 172, ../scss/style.scss */
+  .top-bar {
+    margin-top: 0;
+    padding: 0;
+    float: none;
+  }
+  /* line 177, ../scss/style.scss */
+  .top-bar .toggle-topbar.menu-icon a {
+    color: #222;
+  }
+  /* line 179, ../scss/style.scss */
+  .top-bar .toggle-topbar.menu-icon a:after {
+    box-shadow: 0 10px 0 1px #222, 0 16px 0 1px #222, 0 22px 0 1px #222;
+  }
+  /* line 184, ../scss/style.scss */
+  .top-bar ul.title-area img {
+    margin: -2px 0 0;
+    width: 145px;
+  }
+  /* line 189, ../scss/style.scss */
+  .top-bar .top-bar-section ul {
+    background: #333;
+  }
+  /* line 191, ../scss/style.scss */
+  .top-bar .top-bar-section ul li {
+    margin-left: 0;
+  }
+  /* line 194, ../scss/style.scss */
+  .top-bar .top-bar-section ul li > a {
+    background: #e55ea2;
+    border-radius: 0;
+    font-size: 0.9rem;
+  }
+  /* line 200, ../scss/style.scss */
+  .top-bar .top-bar-section ul li:not(.has-form) a:not(.button) {
+    background: none;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 0;
+  }
+  /* line 205, ../scss/style.scss */
+  .top-bar .top-bar-section ul li:not(.has-form) a:not(.button):hover {
+    background: #e55ea2;
+    color: #fff;
+    margin-top: 0;
+  }
+  /* line 212, ../scss/style.scss */
+  .top-bar .top-bar-section ul li.active:not(.has-form) a:not(.button) {
+    background: #e55ea2;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 0;
+  }
+  /* line 217, ../scss/style.scss */
+  .top-bar .top-bar-section ul li.active:not(.has-form) a:not(.button):hover {
+    background: #f1593b;
+    margin-top: 0;
+  }
+
+  /* line 226, ../scss/style.scss */
+  .top-bar.padding-on-my-header ul.title-area img {
+    margin: 5px 13px 0;
+    width: 35px;
+  }
+
+  /* line 231, ../scss/style.scss */
+  .top-bar.expanded {
+    margin-top: 0;
+    padding: 0;
+    float: none;
+  }
+  /* line 235, ../scss/style.scss */
+  .top-bar.expanded .toggle-topbar.menu-icon a {
+    color: #e55ea2;
+  }
+  /* line 237, ../scss/style.scss */
+  .top-bar.expanded .toggle-topbar.menu-icon a:after {
+    box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+  }
+
+  /* line 244, ../scss/style.scss */
+  .header-fill {
+    height: 40px;
+  }
+}
